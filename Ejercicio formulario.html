@@ -4,16 +4,25 @@
         <meta charset="UTF-8">
         <title> Ejercicio del formulario </title>
         <link rel="stylesheet" href="estilos.css"> <! -- linkear el css -->
+        <style>
+            h2{
+                text-align: center;
+            }
+        </style>
     </head>
 
 <body>  <! -- de acuerdo con esta estructura de documento html: esta  empieza con boddy por qué no con head -->
 <h2>Ejercicio de formulario</h2>
 <p id="demo"> </p>
 
-<form action="results.htlm" method="get"> <! -- NO ESTOY SEGURO DE ESTA LINEAS -->
+<form class="formulario-centrado" action="results.htlm" method="get"> <! -- NO ESTOY SEGURO DE ESTA LINEAS -->
     <div> 
     <label for="Nombre">  Nombre </label><br>
     <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombe">   
+</div>
+<div>
+    <label> Fecha de nacimiento</label><br>
+    <input type="date">
 </div>
 <div>
     <label> Apellido</label><br>
