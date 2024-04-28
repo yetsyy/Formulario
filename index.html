@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet"
+          href= "https://fonts.googleapis.com/css?family=Inconsolata"> <!-- https://fonts.googleapis.com/css + ? + family=  + (tipo de letra) ex: Inconsolata-->
+    <style>
+    </style>
+    </head>
+
+<body>
+   <div class="container">
+    <div class="header"> <!-- linkeado con css-->
+        <h2> Create Account</h2>
+    </div>
+    <form name="myform" class="form" id="form" onsubmit="return validateForm ()"> <!-- Importante llamar la función para que funcione el mensaje de alerta-->
+        <div class="form-control">
+            <label> Username</label>
+            <input type="text" name="username" placeholder="name" id="username">
+         <!-- <li class="fa-check-circle"></li>
+            <li  class="fa-exclamation-circle"></li>
+            <small>Error massage</small> -->
+        </div>
+        <div class="form-control">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="email" id="email">
+        </div>
+        <div class="form-control">
+            <label>Day of birth</label>
+            <input type="date" id="dayofbirth">
+        </div>
+        <div class="form-control">
+            <label>Password</label>
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <button>Submit</button>
+    </form>
+   </div>
+<script src="validation-form.js"></script>
+</body>
+</html>
